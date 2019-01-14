@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.nav-trans {
+  background: transparent;
+}
+
+.full {
+  text-align:center;
+  height: 100%;
+}
+
+.profile {
+  background-image: url('./img/banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  margin: 0 auto;
+  animation: 1s ease-out 0s 1 fadeIn;
+}
+
+.second{
+  display: table;
+  width: 100%;
+  text-align:center;
+}
+
+.second-row {
+  padding: 5px;
+}
+
+.seconds {
+  margin: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.sns {
+  padding-right: 5px;
+  z-index: 100;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: inline-flex;
+}
+
+.sns p {
+  padding-right: 15px;
+}
+
+.sns .twitter a {
+  color: #1DA1F2;
+}
+
+.sns .facebook a {
+  color: #4267b2;
+}
+
+.footer {
+  background-color: #000000;
+  text-align:center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* Scrollbar custom */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
